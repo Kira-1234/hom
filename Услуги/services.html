@@ -12,9 +12,10 @@
 <body>
     <header>  <!-- Шапка страницы (логотип, навигация, кнопки). -->
         <div class="logo">  <!-- Логотип сайта. -->
-            <span>ОКНО</span>  
             <i class="fas fa-home home-icon"></i>  <!-- Иконка для логотипа. -->
-            <span>СЕРВИС</span>
+            <span>ОКНО СЕРВИС</span>  
+            
+    
         </div>
         <nav>  <!-- Навигационное меню с ссылками на разделы страницы. -->
             <ul>  
@@ -26,65 +27,179 @@
             </ul>
         </nav>
     </header>
-    <section id="services" class="services">  <!-- Секция с услугами компании, с id для ссылки из навигации. -->
-        <h2>Услуги</h2>  <!-- Заголовок секции "Услуги". -->
-        <div class="services-container">  <!-- Контейнер для всех услуг. -->
-            <div class="service">  <!-- Первая услуга: консультация. -->
-                <i class="fas fa-comments service-icon"></i>  <!-- Иконка для консультации. -->
-                <h3>Консультация</h3>  <!-- Заголовок услуги. -->
-                <p>Мастер приезжает к вам, делает замеры и консультирует по вопросам дефектов.</p>  <!-- Описание услуги. -->
-                <a href="#" class="btn">Подробнее</a>  <!-- Кнопка для подробной информации о услуге. -->
-            </div>
-            <div class="service">  <!-- Вторая услуга: замена окна. -->
-                <i class="fas fa-window-maximize service-icon"></i>  <!-- Иконка для замены окна. -->
-                <h3>Замена окна</h3>  <!-- Заголовок услуги. -->
-                <p>Мастер сделает то окно, которое вы пожелаете.</p>  <!-- Описание услуги. -->
-                <a href="#" class="btn">Подробнее</a>  <!-- Кнопка для подробной информации о услуге. -->
-            </div>
-            <div class="service">  <!-- Третья услуга: москитная сетка. -->
-                <i class="fas fa-shield-alt service-icon"></i>  <!-- Иконка для москитной сетки. -->
-                <h3>Москитная сетка Анти-пыль</h3>  <!-- Заголовок услуги. -->
-                <p>Москитная сетка, которая не дает пыли попасть в ваш дом.</p>  <!-- Описание услуги. -->
-                <a href="#" class="btn">Подробнее</a>  <!-- Кнопка для подробной информации о услуге. -->
-            </div>
-            <div class="service">  <!-- Четвертая услуга: застекление балкона. -->
-                <i class="fas fa-home service-icon"></i>  <!-- Иконка для застекления балкона. -->
-                <h3>Застекление балкона</h3>  <!-- Заголовок услуги. -->
-                <p>Мастер измерит ваш балкон, изучит все ваши пожелания и сделает как вы просили.</p>  <!-- Описание услуги. -->
-                <a href="#" class="btn">Подробнее</a>  <!-- Кнопка для подробной информации о услуге. -->
-            </div>
-            <div class="service">  <!-- Пятая услуга: дверная сетка. -->
-                <i class="fas fa-door-open service-icon"></i>  <!-- Иконка для дверной сетки. -->
-                <h3>Дверная сетка</h3>  <!-- Заголовок услуги. -->
-                <p>Мастер измерит дверь и подберет варианты работы.</p>  <!-- Описание услуги. -->
-                <a href="#" class="btn">Подробнее</a>  <!-- Кнопка для подробной информации о услуге. -->
-            </div>
-            <div class="service">  <!-- Шестая услуга: все услуги компании. -->
-                <i class="fas fa-list service-icon"></i>  <!-- Иконка для просмотра всех услуг. -->
-                <h3>Ознакомьтесь со всеми услугами</h3>  <!-- Заголовок для просмотра всех услуг. -->
-                <a href="#" class="btn">Подробнее</a>  <!-- Кнопка для перехода на страницу с полным списком услуг. -->
-            </div>
-             <div class="service">  <!-- Пятая услуга: дверная сетка. -->
-                <i class="fas fa-door-open service-icon"></i>  <!-- Иконка для дверной сетки. -->
-                <h3>Дверная сетка</h3>  <!-- Заголовок услуги. -->
-                <p>Мастер измерит дверь и подберет варианты работы.</p>  <!-- Описание услуги. -->
-                <a href="#" class="btn">Подробнее</a>  <!-- Кнопка для подробной информации о услуге. -->
-            </div>
-             <div class="service">  <!-- Пятая услуга: дверная сетка. -->
-                <i class="fas fa-door-open service-icon"></i>  <!-- Иконка для дверной сетки. -->
-                <h3>Дверная сетка</h3>  <!-- Заголовок услуги. -->
-                <p>Мастер измерит дверь и подберет варианты работы.</p>  <!-- Описание услуги. -->
-                <a href="#" class="btn">Подробнее</a>  <!-- Кнопка для подробной информации о услуге. -->
-            </div>
-             <div class="service">  <!-- Пятая услуга: дверная сетка. -->
-                <i class="fas fa-door-open service-icon"></i>  <!-- Иконка для дверной сетки. -->
-                <h3>Дверная сетка</h3>  <!-- Заголовок услуги. -->
-                <p>Мастер измерит дверь и подберет варианты работы.</p>  <!-- Описание услуги. -->
-                <a href="#" class="btn">Подробнее</a>  <!-- Кнопка для подробной информации о услуге. -->
-            </div>
-        </div>
-    </section>
-    
+     <section class="services">
+    <h2>Услуги</h2>
+    <div class="services-container">
+      <div class="service">
+        <i class="fas fa-user-md"></i>
+        <h3>Консультация</h3>
+        <p>Мастер приезжает к вам, делает замеры и консультирует по вопросам дефектов.</p>
+        <a href="#" class="btn" id="open-consultation-modal">500 рублей </a>
+      </div>
+      <div class="service">
+        <i class="fas fa-window-restore"></i>
+        <h3>Замена окна</h3>
+        <p>Мастер сделает то окно, которое вы пожелаете.</p>
+        <a href="#" class="btn" id="open-window-replacement-modal">от 1 500 рублей </a>
+      </div>
+      <div class="service">
+        <i class="fas fa-bug"></i>
+        <h3>Москитная сетка Анти-пыль</h3>
+        <p>Москитная сетка, которая не дает пыли попасть в ваш дом.</p>
+        <a href="#" class="btn" id="open-anti-dust-net-modal">от 1 000 рублей </a>
+      </div>
+      <div class="service">
+        <i class="fas fa-building"></i>
+        <h3>Застекление балкона</h3>
+        <p>Мастер измерит ваш балкон, изучит все ваши пожелания и сделает как вы просили.</p>
+        <a href="#" class="btn" id="open-balcony-glazing-modal">от 2 000 рублей </a>
+      </div>
+      <div class="service">
+        <i class="fas fa-door-open"></i>
+        <h3>Дверная сетка</h3>
+        <p>Мастер измерит дверь и подберет варианты работы.</p>
+        <a href="#" class="btn" id="open-door-net-modal">от 1 400 рублей </a>
+      </div>
+      <div class="service">
+        <i class="fas fa-list"></i>
+        <h3>Москитная сетка Анти-мошка</h3>
+        <p>Москитная сетка, которая не дает мошка попасть в ваш дом.</p>
+        <a href="#" class="btn" id="open-all-services-modal">от 1 000 рублей</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Модальное окно для консультации -->
+  <div id="consultation-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" id="close-consultation-modal">×</span>
+      <h2>Консультация</h2>
+      <p>Мастер приезжает к вам, делает замеры и консультирует по вопросам дефектов.</p>
+      <form>
+        <input type="text" name="name" placeholder="Ваше имя" required>  <!-- Поле для ввода имени. -->
+                        <input type="email" name="email" placeholder="Ваш email" required>  <!-- Поле для ввода email. -->
+                         <input type="tel" name="phone" placeholder="Телефон" maxlength="12" required />
+                    <textarea name="question" rows="4" placeholder="Ваш вопрос..." required></textarea>  <!-- Поле для ввода вопроса. -->
+                    <div style="margin-top: 10px;">
+                     <label style="font-size: 14px;">
+                         <input type="checkbox" name="privacy" required />
+                         Я принимаю <a href="privacy.html" target="_blank" style="color: blue; text-decoration: underline;">соглашение о конфиденциальности</a>
+                     </label>
+                    </div>
+        <button type="submit">Отправить заявку</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Модальное окно для замены окна -->
+  <div id="window-replacement-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" id="close-window-replacement-modal">×</span>
+      <h2>Замена окна</h2>
+      <p>Мастер сделает то окно, которое вы пожелаете.</p>
+      <form>
+        <input type="text" name="name" placeholder="Ваше имя" required>  <!-- Поле для ввода имени. -->
+                        <input type="email" name="email" placeholder="Ваш email" required>  <!-- Поле для ввода email. -->
+                         <input type="tel" name="phone" placeholder="Телефон" maxlength="12" required />
+                    <textarea name="question" rows="4" placeholder="Ваш вопрос..." required></textarea>  <!-- Поле для ввода вопроса. -->
+                    <div style="margin-top: 10px;">
+                     <label style="font-size: 14px;">
+                         <input type="checkbox" name="privacy" required />
+                         Я принимаю <a href="privacy.html" target="_blank" style="color: blue; text-decoration: underline;">соглашение о конфиденциальности</a>
+                     </label>
+                    </div>
+        <button type="submit">Отправить заявку</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Модальное окно для москитной сетки -->
+  <div id="anti-dust-net-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" id="close-anti-dust-net-modal">×</span>
+      <h2>Москитная сетка Анти-пыль</h2>
+      <p>Москитная сетка, которая не дает пыли попасть в ваш дом.</p>
+      <form>
+        <input type="text" name="name" placeholder="Ваше имя" required>  <!-- Поле для ввода имени. -->
+                        <input type="email" name="email" placeholder="Ваш email" required>  <!-- Поле для ввода email. -->
+                         <input type="tel" name="phone" placeholder="Телефон" maxlength="12" required />
+                    <textarea name="question" rows="4" placeholder="Ваш вопрос..." required></textarea>  <!-- Поле для ввода вопроса. -->
+                    <div style="margin-top: 10px;">
+                     <label style="font-size: 14px;">
+                         <input type="checkbox" name="privacy" required />
+                         Я принимаю <a href="privacy.html" target="_blank" style="color: blue; text-decoration: underline;">соглашение о конфиденциальности</a>
+                     </label>
+                    </div>
+        <button type="submit">Отправить заявку</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Модальное окно для застекления балкона -->
+  <div id="balcony-glazing-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" id="close-balcony-glazing-modal">×</span>
+      <h2>Застекление балкона</h2>
+      <p>Мастер измерит ваш балкон, изучит все ваши пожелания и сделает как вы просили.</p>
+      <form>
+       <input type="text" name="name" placeholder="Ваше имя" required>  <!-- Поле для ввода имени. -->
+                        <input type="email" name="email" placeholder="Ваш email" required>  <!-- Поле для ввода email. -->
+                         <input type="tel" name="phone" placeholder="Телефон" maxlength="12" required />
+                    <textarea name="question" rows="4" placeholder="Ваш вопрос..." required></textarea>  <!-- Поле для ввода вопроса. -->
+                    <div style="margin-top: 10px;">
+                     <label style="font-size: 14px;">
+                         <input type="checkbox" name="privacy" required />
+                         Я принимаю <a href="privacy.html" target="_blank" style="color: blue; text-decoration: underline;">соглашение о конфиденциальности</a>
+                     </label>
+                    </div>
+        <button type="submit">Отправить заявку</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Модальное окно для дверной сетки -->
+  <div id="door-net-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" id="close-door-net-modal">×</span>
+      <h2>Дверная сетка</h2>
+      <p>Мастер измерит дверь и подберет варианты работы.</p>
+      <form>
+       <input type="text" name="name" placeholder="Ваше имя" required>  <!-- Поле для ввода имени. -->
+                        <input type="email" name="email" placeholder="Ваш email" required>  <!-- Поле для ввода email. -->
+                         <input type="tel" name="phone" placeholder="Телефон" maxlength="12" required />
+                    <textarea name="question" rows="4" placeholder="Ваш вопрос..." required></textarea>  <!-- Поле для ввода вопроса. -->
+                    <div style="margin-top: 10px;">
+                     <label style="font-size: 14px;">
+                         <input type="checkbox" name="privacy" required />
+                         Я принимаю <a href="privacy.html" target="_blank" style="color: blue; text-decoration: underline;">соглашение о конфиденциальности</a>
+                     </label>
+                    </div>
+        <button type="submit">Отправить заявку</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Модальное окно для всех услуг -->
+  <div id="all-services-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" id="close-all-services-modal">×</span>
+      <h2>Все услуги</h2>
+      <p>Узнайте больше о наших услугах: консультация, замена окон, москитные сетки, застекление балконов, дверные сетки и многое другое.</p>
+      <form>
+       <input type="text" name="name" placeholder="Ваше имя" required>  <!-- Поле для ввода имени. -->
+                        <input type="email" name="email" placeholder="Ваш email" required>  <!-- Поле для ввода email. -->
+                         <input type="tel" name="phone" placeholder="Телефон" maxlength="12" required />
+                    <textarea name="question" rows="4" placeholder="Ваш вопрос..." required></textarea>  <!-- Поле для ввода вопроса. -->
+                    <div style="margin-top: 10px;">
+                     <label style="font-size: 14px;">
+                         <input type="checkbox" name="privacy" required />
+                         Я принимаю <a href="privacy.html" target="_blank" style="color: blue; text-decoration: underline;">соглашение о конфиденциальности</a>
+                     </label>
+                    </div>
+        <button type="submit">Отправить заявку</button>
+      </form>
+    </div>
+  </div>
     <div class="v436_335" id="contact">  <!-- Секция с контактной информацией. -->
         <div class="v436_336">
             <span class="v436_337">Контакты: Способы связи и адреса</span>  <!-- Заголовок секции с контактами. -->
