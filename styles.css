@@ -480,6 +480,7 @@ nav ul li a {
 /* Поля формы */
 input[type="text"],
 input[type="email"],
+input[type="tel"],
 textarea {
     width: 100%;
     padding: 12px;
@@ -493,6 +494,7 @@ textarea {
 /* Эффект при фокусе на input и textarea */
 input[type="text"]:focus,
 input[type="email"]:focus,
+input[type="tel"]:focus,
 textarea:focus {
     border-color: #5578DF;
     outline: none;

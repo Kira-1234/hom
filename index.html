@@ -17,9 +17,9 @@
         </div>
         <nav>  <!-- Навигационное меню с ссылками на разделы страницы. -->
             <ul>  
-                <li><a href="отзовы/отзовы.html">Отзывы</a></li>  <!-- Ссылки на различные разделы. -->
+                <li><a href="отзовы/feedback.html">Отзывы</a></li>  <!-- Ссылки на различные разделы. -->
                 <li><a href="О нас/о нас.html">О нас</a></li>
-                <li><a href="Услуги/услуг.html">Услуги</a></li>
+                <li><a href="Услуги/services.html">Услуги</a></li>
                 <li><a href="">Главнаяя</a></li>
                 <li><a href="#contact">Контакты</a></li>
 
@@ -167,7 +167,14 @@
                 <form id="question-form">  <!-- Форма для ввода вопроса. -->
                     <input type="text" name="name" placeholder="Ваше имя" required />  <!-- Поле для ввода имени. -->
                     <input type="email" name="email" placeholder="Ваша почта" required />  <!-- Поле для ввода email. -->
+                    <input type="tel" name="phone" placeholder="Телефон"  required />
                     <textarea name="question" rows="4" placeholder="Ваш вопрос..." required></textarea>  <!-- Поле для ввода вопроса. -->
+                    <div style="margin-top: 10px;">
+                     <label style="font-size: 14px;">
+                         <input type="checkbox" name="privacy" required />
+                         Я принимаю <a href="privacy.html" target="_blank" style="color: blue; text-decoration: underline;">соглашение о конфиденциальности</a>
+                     </label>
+                    </div>
                     <button type="submit" class="btn">Отправить вопрос</button>  <!-- Кнопка для отправки формы. -->
                 </form>
             </div>
@@ -211,7 +218,14 @@
                     <form id="request-form">  <!-- Форма для заполнения заявки. -->
                         <input type="text" name="name" placeholder="Ваше имя" required>  <!-- Поле для ввода имени. -->
                         <input type="email" name="email" placeholder="Ваш email" required>  <!-- Поле для ввода email. -->
-                        <textarea name="message" placeholder="Ваше сообщение" required></textarea>  <!-- Поле для ввода сообщения. -->
+                         <input type="tel" name="phone" placeholder="Телефон" maxlength="12" required />
+                    <textarea name="question" rows="4" placeholder="Ваш вопрос..." required></textarea>  <!-- Поле для ввода вопроса. -->
+                    <div style="margin-top: 10px;">
+                     <label style="font-size: 14px;">
+                         <input type="checkbox" name="privacy" required />
+                         Я принимаю <a href="privacy.html" target="_blank" style="color: blue; text-decoration: underline;">соглашение о конфиденциальности</a>
+                     </label>
+                    </div>
                         <button type="submit" class="btn">Отправить заявку</button>  <!-- Кнопка для отправки заявки. -->
                     </form>
                 </div>
