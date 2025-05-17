@@ -1,4 +1,4 @@
-<<<<<<< HEAD:мм/Услуги/script.js
+
 // Получаем элементы для первого модального окна (вопрос)
 var questionModal = document.getElementById("question-modal");
 var openQuestionModalButton = document.getElementById("open-modal"); // кнопка для первого модального окна
@@ -56,7 +56,7 @@ window.onclick = function(event) {
         contactModal.style.display = "none";
     }
 }
-=======
+
 // Получаем элементы для первого модального окна (вопрос)
 var questionModal = document.getElementById("question-modal");
 var openQuestionModalButton = document.getElementById("open-modal"); // кнопка для первого модального окна
@@ -114,4 +114,4 @@ window.onclick = function(event) {
         contactModal.style.display = "none";
     }
 }
->>>>>>> 50e64bb (Website-development):Услуги/script.js
+
