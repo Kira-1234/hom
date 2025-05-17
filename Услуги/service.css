@@ -1,0 +1,681 @@
+<<<<<<< HEAD:мм/Услуги/service.css
+body {
+    font-family: Arial, sans-serif; /* Шрифт */
+    color: black; /* Цвет текста */
+    margin: 0; /* Убираем отступы */
+    padding: 0; /* Убираем внутренние отступы */
+}
+
+html {
+    scroll-behavior: smooth; /* Плавная прокрутка */
+}
+
+header {
+    display: flex; /* Flexbox для расположения */
+    justify-content: space-between; /* Расстояние между элементами */
+    align-items: center; /* Вертикальное выравнивание */
+}
+
+.logo {
+    display: flex; /* Flexbox для логотипа */
+    align-items: center; /* Вертикальное выравнивание */
+}
+
+.home-icon {
+    color: #5578DF; /* Цвет иконки */
+    margin: 0 8px; /* Отступы вокруг иконки */
+}
+
+nav {
+    flex-grow: 1; /* Занимает оставшееся пространство */
+    display: flex; /* Flexbox для навигации */
+    justify-content: center; /* Выравнивание по центру */
+}
+
+nav ul {
+    list-style: none; /* Убираем маркеры списка */
+    display: flex; /* Flexbox для списка */
+    gap: 40px; /* Промежуток между пунктами */
+}
+
+nav ul li a {
+    text-decoration: none; /* Без подчеркивания */
+    color: black; /* Цвет текста */
+}
+
+.cart-button {
+    background-color: #5578DF; /* Цвет фона */
+    color: white; /* Цвет текста */
+    border: none; /* Без рамки */
+    padding: 10px 20px; /* Отступы */
+    font-size: 16px; /* Размер шрифта */
+    cursor: pointer; /* Курсор-указатель */
+    border-radius: 5px; /* Скругленные углы */
+    display: flex; /* Flexbox для выравнивания */
+    align-items: center; /* Вертикальное выравнивание */
+    justify-content: center; /* Горизонтальное выравнивание */
+}
+.services {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 столбца */
+    grid-gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.service {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    position: relative;
+}
+
+.service:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.service i {
+    font-size: 50px;
+    color: #5578DF;
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+}
+
+.service:hover i {
+    color: #475c8a;
+}
+
+.service h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.service p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.service .btn {
+    background-color: #5578DF;
+    color: white;
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.service .btn:hover {
+    background-color: #475c8a;
+}
+
+/* Медиа-запросы для адаптивности */
+@media (max-width: 768px) {
+    .services-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 карточки в ряду на экранах меньше 768px */
+    }
+}
+
+@media (max-width: 480px) {
+    .services-container {
+        grid-template-columns: 1fr; /* 1 карточка в ряду на экранах меньше 480px */
+    }
+}
+
+
+/* Общие стили для секции */
+.order-process {
+    background: url('image/Image.png') no-repeat center center/cover;
+    padding: 60px 20px;
+    color: white;
+    text-align: center;
+    position: relative;
+    margin-top: 100px;
+}
+
+.order-process h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: black; /* Текст стал черным для лучшей видимости */
+}
+.v436_335 {
+    width: 90%;
+    height: 449px;
+    background: url("../images/v436_335.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: relative; /* Заменили на relative */
+    margin-top: auto; /* Это обеспечит расположение секции внизу */
+    overflow: hidden;
+    margin-left: 100px;
+}
+
+
+.v436_336 {
+    width: 100%;
+    height: 303px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 73px;
+    left: 63px;
+    overflow: hidden;
+}
+
+.v436_337 {
+    width: 716px;
+    color: rgba(29, 29, 27, 1);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-family: Tomorrow;
+    font-weight: SemiBold;
+    font-size: 45px;
+    opacity: 1;
+    text-align: left;
+}
+
+.v436_338 {
+    width: 100%;
+    height: 158px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 99px;
+    left: 0px;
+    overflow: hidden;
+}
+
+.v436_339 {
+    width: 100%;
+    height: 158px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    overflow: hidden;
+}
+
+.v436_340 {
+    width: 100%;
+    height: 52px;
+    background: rgba(255, 255, 255, 0.03999999910593033);
+    opacity: 1;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    overflow: hidden;
+}
+
+.v436_341 {
+    width: 87px;
+    color: rgba(97, 97, 92, 1);
+    position: absolute;
+    top: 11px;
+    left: 18px;
+    font-family: Tomorrow;
+    font-weight: Regular;
+    font-size: 18px;
+    opacity: 1;
+    text-align: left;
+}
+
+.v436_342 {
+    width: 166px;
+    color: rgba(97, 97, 92, 1);
+    position: absolute;
+    top: 11px;
+    left: 535px;
+    font-family: Tomorrow;
+    font-weight: Regular;
+    font-size: 18px;
+    opacity: 1;
+    text-align: left;
+}
+
+.v436_343 {
+    width: 100%;
+    height: 52px;
+    background: rgba(255, 255, 255, 0.03999999910593033);
+    opacity: 1;
+    position: absolute;
+    top: 104px;
+    left: 1px;
+    overflow: hidden;
+}
+
+.v436_344 {
+    width: 61px;
+    color: rgba(97, 97, 92, 1);
+    position: absolute;
+    top: 11px;
+    left: 18px;
+    font-family: Tomorrow;
+    font-weight: Regular;
+    font-size: 18px;
+    opacity: 1;
+    text-align: left;
+}
+
+.v436_345 {
+    width: 232px;
+    color: rgba(97, 97, 92, 1);
+    position: absolute;
+    top: 11px;
+    left: 534px;
+    font-family: Tomorrow;
+    font-weight: Regular;
+    font-size: 18px;
+    opacity: 1;
+    text-align: left;
+}
+
+.v436_346 {
+    width: 100%;
+    height: 52px;
+    background: rgba(0, 0, 0, 0.03999999910593033);
+    opacity: 1;
+    position: absolute;
+    top: 52px;
+    left: 1px;
+    overflow: hidden;
+}
+
+.v436_347 {
+    width: 154px;
+    color: rgba(97, 97, 92, 1);
+    position: absolute;
+    top: 12px;
+    left: 17px;
+    font-family: Tomorrow;
+    font-weight: Regular;
+    font-size: 18px;
+    opacity: 1;
+    text-align: left;
+}
+
+.v436_348 {
+    width: 353px;
+    color: rgba(97, 97, 92, 1);
+    position: absolute;
+    top: 11px;
+    left: 535px;
+    font-family: Tomorrow;
+    font-weight: Regular;
+    font-size: 18px;
+    opacity: 1;
+    text-align: left;
+}
+=======
+body {
+    font-family: Arial, sans-serif; /* Шрифт */
+    color: black; /* Цвет текста */
+    margin: 0; /* Убираем отступы */
+    padding: 0; /* Убираем внутренние отступы */
+}
+
+html {
+    scroll-behavior: smooth; /* Плавная прокрутка */
+}
+
+header {
+    display: flex; /* Flexbox для расположения */
+    justify-content: space-between; /* Расстояние между элементами */
+    align-items: center; /* Вертикальное выравнивание */
+}
+
+.logo {
+    display: flex; /* Flexbox для логотипа */
+    align-items: center; /* Вертикальное выравнивание */
+}
+
+.home-icon {
+    color: #5578DF; /* Цвет иконки */
+    margin: 0 8px; /* Отступы вокруг иконки */
+}
+
+nav {
+    flex-grow: 1; /* Занимает оставшееся пространство */
+    display: flex; /* Flexbox для навигации */
+    justify-content: center; /* Выравнивание по центру */
+}
+
+nav ul {
+    list-style: none; /* Убираем маркеры списка */
+    display: flex; /* Flexbox для списка */
+    gap: 40px; /* Промежуток между пунктами */
+}
+
+nav ul li a {
+    text-decoration: none; /* Без подчеркивания */
+    color: black; /* Цвет текста */
+}
+
+.cart-button {
+    background-color: #5578DF; /* Цвет фона */
+    color: white; /* Цвет текста */
+    border: none; /* Без рамки */
+    padding: 10px 20px; /* Отступы */
+    font-size: 16px; /* Размер шрифта */
+    cursor: pointer; /* Курсор-указатель */
+    border-radius: 5px; /* Скругленные углы */
+    display: flex; /* Flexbox для выравнивания */
+    align-items: center; /* Вертикальное выравнивание */
+    justify-content: center; /* Горизонтальное выравнивание */
+}
+.services {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 столбца */
+    grid-gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.service {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    position: relative;
+}
+
+.service:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.service i {
+    font-size: 50px;
+    color: #5578DF;
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+}
+
+.service:hover i {
+    color: #475c8a;
+}
+
+.service h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.service p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.service .btn {
+    background-color: #5578DF;
+    color: white;
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.service .btn:hover {
+    background-color: #475c8a;
+}
+
+/* Медиа-запросы для адаптивности */
+@media (max-width: 768px) {
+    .services-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 карточки в ряду на экранах меньше 768px */
+    }
+}
+
+@media (max-width: 480px) {
+    .services-container {
+        grid-template-columns: 1fr; /* 1 карточка в ряду на экранах меньше 480px */
+    }
+}
+
+
+/* Общие стили для секции */
+.order-process {
+    background: url('image/Image.png') no-repeat center center/cover;
+    padding: 60px 20px;
+    color: white;
+    text-align: center;
+    position: relative;
+    margin-top: 100px;
+}
+
+.order-process h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: black; /* Текст стал черным для лучшей видимости */
+}
+.v436_335 {
+    width: 90%;
+    height: 449px;
+    background: url("../images/v436_335.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: relative; /* Заменили на relative */
+    margin-top: auto; /* Это обеспечит расположение секции внизу */
+    overflow: hidden;
+    margin-left: 100px;
+}
+
+
+.v436_336 {
+    width: 100%;
+    height: 303px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 73px;
+    left: 63px;
+    overflow: hidden;
+}
+
+.v436_337 {
+    width: 716px;
+    color: rgba(29, 29, 27, 1);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-family: Tomorrow;
+    font-weight: SemiBold;
+    font-size: 45px;
+    opacity: 1;
+    text-align: left;
+}
+
+.v436_338 {
+    width: 100%;
+    height: 158px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 99px;
+    left: 0px;
+    overflow: hidden;
+}
+
+.v436_339 {
+    width: 100%;
+    height: 158px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    overflow: hidden;
+}
+
+.v436_340 {
+    width: 100%;
+    height: 52px;
+    background: rgba(255, 255, 255, 0.03999999910593033);
+    opacity: 1;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    overflow: hidden;
+}
+
+.v436_341 {
+    width: 87px;
+    color: rgba(97, 97, 92, 1);
+    position: absolute;
+    top: 11px;
+    left: 18px;
+    font-family: Tomorrow;
+    font-weight: Regular;
+    font-size: 18px;
+    opacity: 1;
+    text-align: left;
+}
+
+.v436_342 {
+    width: 166px;
+    color: rgba(97, 97, 92, 1);
+    position: absolute;
+    top: 11px;
+    left: 535px;
+    font-family: Tomorrow;
+    font-weight: Regular;
+    font-size: 18px;
+    opacity: 1;
+    text-align: left;
+}
+
+.v436_343 {
+    width: 100%;
+    height: 52px;
+    background: rgba(255, 255, 255, 0.03999999910593033);
+    opacity: 1;
+    position: absolute;
+    top: 104px;
+    left: 1px;
+    overflow: hidden;
+}
+
+.v436_344 {
+    width: 61px;
+    color: rgba(97, 97, 92, 1);
+    position: absolute;
+    top: 11px;
+    left: 18px;
+    font-family: Tomorrow;
+    font-weight: Regular;
+    font-size: 18px;
+    opacity: 1;
+    text-align: left;
+}
+
+.v436_345 {
+    width: 232px;
+    color: rgba(97, 97, 92, 1);
+    position: absolute;
+    top: 11px;
+    left: 534px;
+    font-family: Tomorrow;
+    font-weight: Regular;
+    font-size: 18px;
+    opacity: 1;
+    text-align: left;
+}
+
+.v436_346 {
+    width: 100%;
+    height: 52px;
+    background: rgba(0, 0, 0, 0.03999999910593033);
+    opacity: 1;
+    position: absolute;
+    top: 52px;
+    left: 1px;
+    overflow: hidden;
+}
+
+.v436_347 {
+    width: 154px;
+    color: rgba(97, 97, 92, 1);
+    position: absolute;
+    top: 12px;
+    left: 17px;
+    font-family: Tomorrow;
+    font-weight: Regular;
+    font-size: 18px;
+    opacity: 1;
+    text-align: left;
+}
+
+.v436_348 {
+    width: 353px;
+    color: rgba(97, 97, 92, 1);
+    position: absolute;
+    top: 11px;
+    left: 535px;
+    font-family: Tomorrow;
+    font-weight: Regular;
+    font-size: 18px;
+    opacity: 1;
+    text-align: left;
+}
+>>>>>>> 50e64bb (Website-development):Услуги/service.css

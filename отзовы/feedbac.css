@@ -1,0 +1,484 @@
+body {
+    font-family: Arial, sans-serif; /* Шрифт */
+    color: black; /* Цвет текста */
+    margin: 0; /* Убираем отступы */
+    padding: 0; /* Убираем внутренние отступы */
+}
+html {
+    scroll-behavior: smooth; /* Плавная прокрутка */
+}
+header {
+    display: flex; /* Flexbox для расположения */
+    justify-content: space-between; /* Расстояние между элементами */
+    align-items: center; /* Вертикальное выравнивание */
+}
+.logo {
+    display: flex; /* Flexbox для логотипа */
+    align-items: center; /* Вертикальное выравнивание */
+}
+.home-icon {
+    color: #5578DF; /* Цвет иконки */
+    margin: 0 8px; /* Отступы вокруг иконки */
+}
+nav {
+    flex-grow: 1; /* Занимает оставшееся пространство */
+    display: flex; /* Flexbox для навигации */
+    justify-content: center; /* Выравнивание по центру */
+}
+nav ul {
+    list-style: none; /* Убираем маркеры списка */
+    display: flex; /* Flexbox для списка */
+    gap: 40px; /* Промежуток между пунктами */
+}
+nav ul li a {
+    text-decoration: none; /* Без подчеркивания */
+    color: black; /* Цвет текста */
+}
+.cart-button {
+    background-color: #5578DF; /* Цвет фона */
+    color: white; /* Цвет текста */
+    border: none; /* Без рамки */
+    padding: 10px 20px; /* Отступы */
+    font-size: 16px; /* Размер шрифта */
+    cursor: pointer; /* Курсор-указатель */
+    border-radius: 5px; /* Скругленные углы */
+    display: flex; /* Flexbox для выравнивания */
+    align-items: center; /* Вертикальное выравнивание */
+    justify-content: center; /* Горизонтальное выравнивание */
+}
+/*секция*/
+.Information-section {
+    display: flex;
+    justify-content: center;
+    padding: 60px 20px;
+}
+.repair-image {
+    width: 50%;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.testimonials-section {
+    width: 100%;
+    padding: 80px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white; /* Белый фон для секции */
+}
+
+/* Контейнер для отзывов */
+.testimonials-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+}
+
+/* Фото слева */
+.testimonials-image {
+    width: 45%;
+}
+
+.testimonials-image img {
+    width: 100%;
+    height: auto;
+    max-height: 650px; /* Ограничиваем максимальную высоту изображения */
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Тень для изображения */
+    object-fit: cover; /* Обеспечивает сохранение пропорций изображения */
+}
+
+
+/* Информация с отзывами справа */
+.testimonials-info {
+    width: 50%;
+    text-align: left;
+    padding-left: 40px;
+}
+
+.testimonials-title {
+    font-size: 36px;
+    font-weight: 600;
+    color: #5578DF; /* Фиолетовый цвет */
+    margin-bottom: 40px;
+}
+
+/* Сетка для отзывов */
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Два отзыва в одном ряду */
+    gap: 20px; /* Отступ между отзывами */
+}
+
+/* Отзывы */
+.testimonial {
+    background-color: #5578dfb3;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.testimonial.full-width {
+    grid-column: span 2; /* Растягиваем отзыв на всю ширину */
+}
+
+.testimonial-quote {
+    font-size: 22px;
+    font-weight: 600;
+    color: #000000; /* Фиолетовый цвет для цитаты */
+    margin-bottom: 10px;
+}
+
+.testimonial-text {
+    font-size: 16px;
+    color: #000000;
+    line-height: 1.5;
+}
+
+
+/* Адаптивность */
+@media (max-width: 1024px) {
+    .testimonials-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .testimonials-image {
+        width: 100%;
+    }
+
+    .testimonials-info {
+        width: 100%;
+    }
+
+    .testimonials-grid {
+        grid-template-columns: 1fr; /* Один отзыв в ряду на маленьких экранах */
+    }
+}
+.contact {
+    background-color: white;
+    padding: 80px 20px;
+    text-align: center;
+    position: relative;
+    color: #5578DF;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Заголовок */
+.contact h2 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #5578DF;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Кнопка для открытия модального окна */
+.btn {
+    background-color: #5578DF;
+    color: white;
+    padding: 15px 40px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 50px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background-color: #4e69a2;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Модальное окно */
+.modal {
+    display: none; /* Скрыто по умолчанию */
+    position: fixed;
+    z-index: 1; /* Поверх всего контента */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Тень на фоне */
+    padding-top: 100px;
+    animation: fadeIn 0.5s ease;
+}
+
+/* Анимация появления модального окна */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Контент модального окна */
+.modal-content {
+    background-color: white;
+    margin: auto;
+    padding: 40px;
+    border-radius: 10px;
+    width: 60%;
+    max-width: 500px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    animation: fadeInUp 0.3s ease;
+}
+
+/* Анимация подъема модального окна */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Кнопка закрытия модального окна */
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Поля формы */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+/* Эффект при фокусе на input и textarea */
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #5578DF;
+    outline: none;
+}
+
+/* Стили кнопки в модальном окне */
+.modal-content .btn {
+    background-color: #5578DF;
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .modal-content {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .modal-content {
+        width: 90%;
+    }
+}
+.v436_335 {
+    width: 90%;
+    height: 449px;
+    background: url("../images/v436_335.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: relative; /* Заменили на relative */
+    margin-top: auto; /* Это обеспечит расположение секции внизу */
+    overflow: hidden;
+    margin-left: 100px;
+}
+
+
+.v436_336 {
+    width: 100%;
+    height: 303px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 73px;
+    left: 63px;
+    overflow: hidden;
+}
+
+.v436_337 {
+    width: 716px;
+    color: rgba(29, 29, 27, 1);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-family: Tomorrow;
+    font-weight: SemiBold;
+    font-size: 45px;
+    opacity: 1;
+    text-align: left;
+}
+
+.v436_338 {
+    width: 100%;
+    height: 158px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 99px;
+    left: 0px;
+    overflow: hidden;
+}
+
+.v436_339 {
+    width: 100%;
+    height: 158px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    overflow: hidden;
+}
+
+.v436_340 {
+    width: 100%;
+    height: 52px;
+    background: rgba(255, 255, 255, 0.03999999910593033);
+    opacity: 1;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    overflow: hidden;
+}
+
+.v436_341 {
+    width: 87px;
+    color: rgba(97, 97, 92, 1);
+    position: absolute;
+    top: 11px;
+    left: 18px;
+    font-family: Tomorrow;
+    font-weight: Regular;
+    font-size: 18px;
+    opacity: 1;
+    text-align: left;
+}
+
+.v436_342 {
+    width: 166px;
+    color: rgba(97, 97, 92, 1);
+    position: absolute;
+    top: 11px;
+    left: 535px;
+    font-family: Tomorrow;
+    font-weight: Regular;
+    font-size: 18px;
+    opacity: 1;
+    text-align: left;
+}
+
+.v436_343 {
+    width: 100%;
+    height: 52px;
+    background: rgba(255, 255, 255, 0.03999999910593033);
+    opacity: 1;
+    position: absolute;
+    top: 104px;
+    left: 1px;
+    overflow: hidden;
+}
+
+.v436_344 {
+    width: 61px;
+    color: rgba(97, 97, 92, 1);
+    position: absolute;
+    top: 11px;
+    left: 18px;
+    font-family: Tomorrow;
+    font-weight: Regular;
+    font-size: 18px;
+    opacity: 1;
+    text-align: left;
+}
+
+.v436_345 {
+    width: 232px;
+    color: rgba(97, 97, 92, 1);
+    position: absolute;
+    top: 11px;
+    left: 534px;
+    font-family: Tomorrow;
+    font-weight: Regular;
+    font-size: 18px;
+    opacity: 1;
+    text-align: left;
+}
+
+.v436_346 {
+    width: 100%;
+    height: 52px;
+    background: rgba(0, 0, 0, 0.03999999910593033);
+    opacity: 1;
+    position: absolute;
+    top: 52px;
+    left: 1px;
+    overflow: hidden;
+}
+
+.v436_347 {
+    width: 154px;
+    color: rgba(97, 97, 92, 1);
+    position: absolute;
+    top: 12px;
+    left: 17px;
+    font-family: Tomorrow;
+    font-weight: Regular;
+    font-size: 18px;
+    opacity: 1;
+    text-align: left;
+}
+
+.v436_348 {
+    width: 353px;
+    color: rgba(97, 97, 92, 1);
+    position: absolute;
+    top: 11px;
+    left: 535px;
+    font-family: Tomorrow;
+    font-weight: Regular;
+    font-size: 18px;
+    opacity: 1;
+    text-align: left;
+}
