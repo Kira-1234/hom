@@ -1,8 +1,10 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template, send_from_directory
 from flask_cors import CORS
 
-app = Flask(__name__)
-CORS(app)  # Чтобы фронт мог делать запросы
+app = Flask(__name__,
+            static_folder='.',  # Корневая папка для статических файлов
+            template_folder='html')  # Папка с HTML-файлами
+CORS(app)
 
 @app.route('/api/request', methods=['POST'])
 def request_form():
